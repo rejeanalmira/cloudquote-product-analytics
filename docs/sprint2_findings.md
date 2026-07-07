@@ -22,138 +22,130 @@ Based on the findings, engineering should prioritize API stability improvements 
 
 # Analysis
 
-		## Issue Type Distribution
+## Issue Type Distribution
 		
-		API Failures generated the highest number of support tickets, followed by Login Issues and Configuration Errors.
+API Failures generated the highest number of support tickets, followed by Login Issues and Configuration Errors.
 		
-		This suggests customers experience the greatest difficulty when integrating CloudQuote with external systems, which directly impacts business operations.
+This suggests customers experience the greatest difficulty when integrating CloudQuote with external systems, which directly impacts business operations.
 		
-		### Business Impact
+### Business Impact
 		
-		Frequent API failures increase customer frustration, delay quote generation, and create additional workload for Support Engineers.
+Frequent API failures increase customer frustration, delay quote generation, and create additional workload for Support Engineers.
 		
-		---
+
 		
-		## Product Area Analysis
+## Product Area Analysis
 		
-		The Pricing Engine received the highest volume of customer support requests.
+The Pricing Engine received the highest volume of customer support requests.
 		
-		This indicates either:
+This indicates either:
 		
-		- A complex user experience
-		- Product defects
-		- Recent feature regressions
-		- Insufficient customer documentation
+- A complex user experience
+- Product defects
+- Recent feature regressions
+- Insufficient customer documentation
+
+### Business Impact
 		
-		### Business Impact
+Improving Pricing Engine reliability has the potential to reduce support volume while improving customer satisfaction.
+	
+	
+## Customer Segment Analysis
 		
-		Improving Pricing Engine reliability has the potential to reduce support volume while improving customer satisfaction.
+Enterprise customers generated the largest percentage of support tickets.
 		
-		---
+While Enterprise customers typically have more users and integrations, they also represent the highest revenue opportunities.
 		
-		## Customer Segment Analysis
+### Business Impact
 		
-		Enterprise customers generated the largest percentage of support tickets.
+Reducing Enterprise customer issues should improve customer retention and reduce churn risk.
 		
-		While Enterprise customers typically have more users and integrations, they also represent the highest revenue opportunities.
 		
-		### Business Impact
+## Resolution Time Analysis
 		
-		Reducing Enterprise customer issues should improve customer retention and reduce churn risk.
+Critical severity incidents required the longest average resolution time.
 		
-		---
+Average resolution times generally increased with issue severity, which aligns with expected support processes.
+
+However, several High severity issues exceeded expected resolution targets.
 		
-		## Resolution Time Analysis
+### Business Impact
 		
-		Critical severity incidents required the longest average resolution time.
+Long resolution times increase operational costs and negatively affect customer experience.
 		
-		Average resolution times generally increased with issue severity, which aligns with expected support processes.
 		
-		However, several High severity issues exceeded expected resolution targets.
+# Key Insights
 		
-		### Business Impact
+## Insight 1
 		
-		Long resolution times increase operational costs and negatively affect customer experience.
+API Failures represent the largest source of customer support demand.
 		
-		---
+### Recommendation
 		
-		# Key Insights
+Engineering should investigate API reliability and monitor error trends after each product release.
 		
-		## Insight 1
+
 		
-		API Failures represent the largest source of customer support demand.
+## Insight 2
 		
-		### Recommendation
+Pricing Engine issues consistently generate customer tickets.
 		
-		Engineering should investigate API reliability and monitor error trends after each product release.
+### Recommendation
 		
-		---
+Partner with Product Managers to identify recurring defects and evaluate whether additional customer training or UX improvements are needed.
+
 		
-		## Insight 2
+## Insight 3
 		
-		Pricing Engine issues consistently generate customer tickets.
+Enterprise customers require the highest level of support.
 		
-		### Recommendation
+### Recommendation
 		
-		Partner with Product Managers to identify recurring defects and evaluate whether additional customer training or UX improvements are needed.
+Create proactive monitoring for Enterprise accounts and prioritize critical incidents affecting these customers.
 		
-		---
 		
-		## Insight 3
+# Business Recommendations
 		
-		Enterprise customers require the highest level of support.
+## Recommendation 1
 		
-		### Recommendation
+Improve API reliability by identifying endpoints with the highest failure rates.
 		
-		Create proactive monitoring for Enterprise accounts and prioritize critical incidents affecting these customers.
+**Expected Outcome**
 		
-		---
+- Fewer customer incidents
+- Reduced support volume
+- Higher customer satisfaction
 		
-		# Business Recommendations
 		
-		## Recommendation 1
+## Recommendation 2
 		
-		Improve API reliability by identifying endpoints with the highest failure rates.
+Review Pricing Engine defects during the next sprint planning session.
 		
-		**Expected Outcome**
+**Expected Outcome**
 		
-		- Fewer customer incidents
-		- Reduced support volume
-		- Higher customer satisfaction
+- Faster quote generation
+- Improved product usability
+- Lower ticket volume
 		
-		---
 		
-		## Recommendation 2
+## Recommendation 3
 		
-		Review Pricing Engine defects during the next sprint planning session.
+Establish SLA monitoring for Critical incidents.
 		
-		**Expected Outcome**
+**Expected Outcome**
 		
-		- Faster quote generation
-		- Improved product usability
-		- Lower ticket volume
+- Faster incident resolution
+- Better Enterprise customer retention
+- Improved operational efficiency
 		
-		---
 		
-		## Recommendation 3
+# Skills Demonstrated
 		
-		Establish SLA monitoring for Critical incidents.
-		
-		**Expected Outcome**
-		
-		- Faster incident resolution
-		- Better Enterprise customer retention
-		- Improved operational efficiency
-		
-		---
-		
-		# Skills Demonstrated
-		
-		- SQL Aggregations
-		- GROUP BY
-		- ORDER BY
-		- AVG()
-		- COUNT()
-		- Business Analysis
-		- Product Analytics
-		- Executive Communication
+- SQL Aggregations
+- GROUP BY
+- ORDER BY
+- AVG()
+- COUNT()
+- Business Analysis
+- Product Analytics
+- Executive Communication
